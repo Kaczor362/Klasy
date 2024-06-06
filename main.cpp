@@ -7,6 +7,9 @@ using namespace std;
 
 // Base class for shapes
 class Shape {
+private:
+    std::string name;
+
 public:
     static int shapeCounter;
 
@@ -14,11 +17,11 @@ public:
         shapeCounter++;
     }
 
-    virtual ~Shape() {
+    ~Shape() {
         shapeCounter--;
     }
 
-    virtual double perimeter() const = 0;
+    virtual double lenght() const = 0;
     virtual double area() const = 0;
 
     std::string getName() const { return name; }
@@ -27,22 +30,29 @@ public:
         return shapeCounter;
     }
 
-    static Shape& largerArea(Shape& s1, Shape& s2) {
-        return (s1.area() > s2.area()) ? s1 : s2;
-    }
+    static Shape& largerArea(Shape& s1, Shape& s2, Shape& s3) {
+        Shape* largest = &s1; // Załóżmy, że s1 ma największe pole na początek
 
-protected:
-    std::string name;
-};
+        if (s2.area() > largest->area()) {
+            largest = &s2;  // Jeśli s2 jest większe, to teraz jest największe
+        }
+
+        if (s3.area() > largest->area()) {
+            largest = &s3;  // Jeśli s3 jest większe, to teraz jest największe
+        }
+
+        return *largest; // Zwróć referencję do figury o największym polu
+    }
+    };
+
 
 int Shape::shapeCounter = 0;
 
-// Derived class for circles
 class Circle : public Shape {
 public:
     Circle(const std::string& name, double radius) : Shape(name), radius(radius) {}
 
-    double perimeter() const override {
+    double lenght() const override {
         return 2 * M_PI * radius;
     }
 
@@ -54,12 +64,11 @@ private:
     double radius;
 };
 
-// Derived class for squares
 class Square : public Shape {
 public:
     Square(const std::string& name, double side) : Shape(name), side(side) {}
 
-    double perimeter() const override {
+    double lenght() const override {
         return 4 * side;
     }
 
@@ -71,12 +80,11 @@ private:
     double side;
 };
 
-// Derived class for rectangles
 class Rectangle : public Shape {
 public:
     Rectangle(const std::string& name, double side1, double side2) : Shape(name), side1(side1), side2(side2) {}
 
-    double perimeter() const override {
+    double lenght() const override {
         return 2 * (side1 + side2);
     }
 
@@ -98,7 +106,7 @@ int main()
 
     cout << "Istnieje " << Point::numberOfPoints() << " punktow."<< endl;
 
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < 4; i++)
     {
         points[i].show();
     }
@@ -113,11 +121,12 @@ int main()
 
     Circle circle("Circle 1", 5.0);
     Square square("Square 1", 4.0);
+    Rectangle rectangle("Rectangle", 4.5 , 5.5);
 
-    std::cout << circle.getName() << ": Perimeter = " << circle.perimeter() << ", Area = " << circle.area() << std::endl;
-    std::cout << square.getName() << ": Perimeter = " << square.perimeter() << ", Area = " << square.area() << std::endl;
+    std::cout << circle.getName() << ": lenght = " << circle.lenght() << ", Area = " << circle.area() << std::endl;
+    std::cout << square.getName() << ": lenght = " << square.lenght() << ", Area = " << square.area() << std::endl;
+    std::cout << rectangle.getName() << ": lenght = " << rectangle.lenght() << ", Area = " << rectangle.area() << std::endl;
 
-    Shape& s = Shape::largerArea(circle, square);
+    Shape& s = Shape::largerArea(circle, square, rectangle);
     std::cout << "Shape with larger area: " << s.getName() << std::endl;
-
 }
