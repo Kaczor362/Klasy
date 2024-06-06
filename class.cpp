@@ -5,12 +5,12 @@
 int Point::m_numberOfPoints = 0;
 
 Point::Point() {
-    m_name = "bez nazwy";
+    m_name = "basic point";
     m_x = 0;
     m_y = 0;
     Point::m_numberOfPoints++;
 }
-
+//punkt nadany przez użytkownika
 Point::Point(const std::string& name, double x, double y) {
     m_name = name;
     m_x = x;
@@ -43,7 +43,7 @@ void Point::show() const {
     std::cout << "Point: " << m_name << "(" << m_x << ", " << m_y << ")" << std::endl;
 }
 
-double Point::distance(const Point& p) const {
+/*double Point::distance(const Point& p) const {
     return sqrt((p.m_x - m_x) * (p.m_x - m_x) + (p.m_y - m_y) * (p.m_y - m_y));
 }
 
@@ -55,7 +55,7 @@ const Point& Point::distant(const Point& p) const {
         return *this;
 
     return p;
-}
+}*/
 
 int Point::numberOfPoints() {
     return Point::m_numberOfPoints;
