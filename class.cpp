@@ -1,5 +1,6 @@
 #include <iostream>
 #include "class.h"
+#include "math.h"
 
 int Point::m_numberOfPoints = 0;
 
@@ -58,6 +59,4 @@ const Point& Point::distant(const Point& p) const {
 
 int Point::numberOfPoints() {
     return Point::m_numberOfPoints;
-}//
-// Created by Olek on 06.06.2024.
-//
+}
