@@ -1,6 +1,6 @@
 #include <iostream>
 #include "class.h"
-#include "math.h"
+#include "cmath"
 
 int Point::m_numberOfPoints = 0;
 
@@ -43,19 +43,18 @@ void Point::show() const {
     std::cout << "Point: " << m_name << "(" << m_x << ", " << m_y << ")" << std::endl;
 }
 
-/*double Point::distance(const Point& p) const {
-    return sqrt((p.m_x - m_x) * (p.m_x - m_x) + (p.m_y - m_y) * (p.m_y - m_y));
-}
-
-const Point& Point::distant(const Point& p) const {
-    double d = sqrt(m_x * m_x + m_y * m_y);
-    double dp = sqrt(p.m_x * p.m_x + p.m_y * p.m_y);
-
-    if (d > dp)
-        return *this;
-
-    return p;
-}*/
+//double Point::vector(const Point& p){
+//    return sqrt((p.m_x - m_x) * (p.m_x - m_x) + (p.m_y - m_y) * (p.m_y - m_y));
+//}
+//const Point& Point::distant(const Point& p) const {
+//    double d = sqrt(m_x * m_x + m_y * m_y);
+//    double dp = sqrt(p.m_x * p.m_x + p.m_y * p.m_y);
+//
+//    if (d > dp)
+//        return *this;
+//
+//    return p;
+//}
 
 int Point::numberOfPoints() {
     return Point::m_numberOfPoints;

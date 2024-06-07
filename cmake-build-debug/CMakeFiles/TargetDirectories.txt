@@ -1,3 +1,3 @@
-C:/Users/Olek/CLionProjects/Klasy/cmake-build-debug/CMakeFiles/klasy.dir
-C:/Users/Olek/CLionProjects/Klasy/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Olek/CLionProjects/Klasy/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/student/CLionProjects/Klasy/cmake-build-debug/CMakeFiles/klasy.dir
+C:/Users/student/CLionProjects/Klasy/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/student/CLionProjects/Klasy/cmake-build-debug/CMakeFiles/rebuild_cache.dir
