@@ -43,7 +43,7 @@ public:
 
         return *largest; // Zwróć referencję do figury o największym polu
     }
-    };
+};
 
 
 int Shape::shapeCounter = 0;
@@ -95,6 +95,33 @@ public:
 private:
     double side1, side2;
 };
+//class Vector {
+//public:
+//    static int vectorCounter;
+//    Vector(const std::string& name, Point& p) : name(name) {
+//        vectorCounter++;
+//    }
+//
+//    ~Vector() {
+//        vectorCounter--;
+//    }
+//
+//    Vector(const std::string& name, double m_x, double m_y) : axisX(m_x), axisY(m_y){}
+//
+//    double vector_lenght() {
+//
+////        return sqrt((p.m_x - axisX) * (p.m_x - axisX) + (p.m_y - axisY) * (p.m_y - axisY));
+//    }
+//
+//    static int getvectorCounter() {
+//        return vectorCounter;
+//    }
+//private:
+//    std::string name;
+//    double axisX,axisY;
+//};
+
+
 
 int main()
 {
