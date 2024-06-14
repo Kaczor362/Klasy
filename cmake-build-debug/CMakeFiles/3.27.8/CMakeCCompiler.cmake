@@ -1,4 +1,4 @@
-set(CMAKE_C_COMPILER "C:/Users/student/AppData/Local/Programs/CLion/bin/mingw/bin/gcc.exe")
+set(CMAKE_C_COMPILER "A:/Clion/CLion 2023.3.4/bin/mingw/bin/gcc.exe")
 set(CMAKE_C_COMPILER_ARG1 "")
 set(CMAKE_C_COMPILER_ID "GNU")
 set(CMAKE_C_COMPILER_VERSION "13.1.0")
@@ -21,11 +21,11 @@ set(CMAKE_C_SIMULATE_VERSION "")
 
 
 
-set(CMAKE_AR "C:/Users/student/AppData/Local/Programs/CLion/bin/mingw/bin/ar.exe")
-set(CMAKE_C_COMPILER_AR "C:/Users/student/AppData/Local/Programs/CLion/bin/mingw/bin/gcc-ar.exe")
-set(CMAKE_RANLIB "C:/Users/student/AppData/Local/Programs/CLion/bin/mingw/bin/ranlib.exe")
-set(CMAKE_C_COMPILER_RANLIB "C:/Users/student/AppData/Local/Programs/CLion/bin/mingw/bin/gcc-ranlib.exe")
-set(CMAKE_LINKER "C:/Users/student/AppData/Local/Programs/CLion/bin/mingw/bin/ld.exe")
+set(CMAKE_AR "A:/Clion/CLion 2023.3.4/bin/mingw/bin/ar.exe")
+set(CMAKE_C_COMPILER_AR "A:/Clion/CLion 2023.3.4/bin/mingw/bin/gcc-ar.exe")
+set(CMAKE_RANLIB "A:/Clion/CLion 2023.3.4/bin/mingw/bin/ranlib.exe")
+set(CMAKE_C_COMPILER_RANLIB "A:/Clion/CLion 2023.3.4/bin/mingw/bin/gcc-ranlib.exe")
+set(CMAKE_LINKER "A:/Clion/CLion 2023.3.4/bin/mingw/bin/ld.exe")
 set(CMAKE_MT "")
 set(CMAKE_TAPI "CMAKE_TAPI-NOTFOUND")
 set(CMAKE_COMPILER_IS_GNUCC 1)
@@ -68,7 +68,7 @@ endif()
 
 
 
-set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "C:/Users/student/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include;C:/Users/student/AppData/Local/Programs/CLion/bin/mingw/include;C:/Users/student/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed;C:/Users/student/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/include")
-set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "mingw32;gcc;moldname;mingwex;kernel32;pthread;advapi32;shell32;user32;kernel32;iconv;mingw32;gcc;moldname;mingwex;kernel32")
-set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "C:/Users/student/AppData/Local/Programs/CLion/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0;C:/Users/student/AppData/Local/Programs/CLion/bin/mingw/lib/gcc;C:/Users/student/AppData/Local/Programs/CLion/bin/mingw/x86_64-w64-mingw32/lib;C:/Users/student/AppData/Local/Programs/CLion/bin/mingw/lib")
+set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "A:/Clion/CLion 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include;A:/Clion/CLion 2023.3.4/bin/mingw/include;A:/Clion/CLion 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed;A:/Clion/CLion 2023.3.4/bin/mingw/x86_64-w64-mingw32/include")
+set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "")
+set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "")
 set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")
